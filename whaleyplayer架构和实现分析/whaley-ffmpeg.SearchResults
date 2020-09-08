@@ -1,0 +1,7 @@
+---- calloc Matches (6 in 5 files) ----
+Xm_iencoder.c (z:\home\sunyc\work\ijkplayer\sunyc\ijkmedia\ijkplayer\xm_media_recorder):    IEncoder *encoder = (IEncoder *)calloc(1, sizeof(IEncoder));
+Xm_iencoder.c (z:\home\sunyc\work\ijkplayer\sunyc\ijkmedia\ijkplayer\xm_media_recorder):    encoder->opaque = calloc(1, opaque_size);
+Xm_media_recorder.c (z:\home\sunyc\work\ijkplayer\sunyc\ijkmedia\ijkplayer\xm_media_recorder):    XMMediaRecorder *mr = (XMMediaRecorder *)calloc(1, sizeof(XMMediaRecorder));
+Xm_rgba_data.c (z:\home\sunyc\work\ijkplayer\sunyc\ijkmedia\ijkplayer\xm_media_recorder):    RgbaData *data = (RgbaData *)calloc(1, sizeof(RgbaData));
+Xm_rgba_queue.c (z:\home\sunyc\work\ijkplayer\sunyc\ijkmedia\ijkplayer\xm_media_recorder):    RgbaQueue *queue = (RgbaQueue *)calloc(1, sizeof(RgbaQueue));
+Xm_thread.c (z:\home\sunyc\work\ijkplayer\sunyc\ijkmedia\ijkplayer\xm_media_recorder):    XMThread *thread = (XMThread *)calloc(1, sizeof(XMThread));
