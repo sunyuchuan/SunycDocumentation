@@ -1,0 +1,34 @@
+{
+一个音轨
+    "track0": [
+        { "file_path":"../data/side_chain_test.wav"文件绝对路径,"volume":80音量值,"cropStartTimeMs":118000从文件的哪个位置开始读取数据,"cropEndTimeMs":150000到文件的哪个位置结束读取,"startTimeMs":140000该音频片段在整个混音时间坐标内的开始位置,"endTimeMs":200000该音频片段在整个混音时间坐标内的结束位置,
+            "effects": [特效effects，只针对当前这个音频片段
+                { "name":"NoiseSuppression","info":"On"},
+                { "name":"Beautify","info":"CleanVoice"}
+            ]
+        },
+        { "file_path":"../data/side_chain_test.wav","volume":80,"cropStartTimeMs":10000,"cropEndTimeMs":118000,"startTimeMs":10000,"endTimeMs":120000,
+            "effects": [
+                { "name":"NoiseSuppression","info":"On"},
+                { "name":"Beautify","info":"CleanVoice"}
+            ]
+        }
+    ],
+一个音轨
+    "track1": [{ "file_path":"../data/side_chain_music_test.wav","volume":80,"cropStartTimeMs":35000,"cropEndTimeMs":650000,"startTimeMs":5000,"endTimeMs":75000,"fadeInTimeMs":3000淡入时长,"fadeOutTimeMs":3000淡出时长}],
+一个音轨
+    "track2": [{ "file_path":"../data/bgm1.mp3","volume":80,"cropStartTimeMs":0,"cropEndTimeMs":350000,"startTimeMs":80000,"endTimeMs":120000,"fadeInTimeMs":3000,"fadeOutTimeMs":3000}],
+一个音轨
+    "track3": [{ "file_path":"../data/audio_effects_2.wav","volume":80,"cropStartTimeMs":0,"cropEndTimeMs":6000,"startTimeMs":190000,"endTimeMs":200000,"fadeInTimeMs":0,"fadeOutTimeMs":0}],
+总轨特效，目前还处于调参阶段，所以把所有基本的效果器都暴露了，后续可能只出一个类似"name":"Beautify","info":"CleanVoice"的模板。
+    "effects": [
+        { "name":"mcompand","info":"0.005,0.1 -47,-40,-34,-34,-17,-33;100;0.003,0.05 -47,-40,-34,-34,-17,-33;400;0.000625,0.0125 -47,-40,-34,-34,-15,-33;1600;0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30;6400;0,0.025 -38,-31,-28,-28,-0,-25;"},
+        { "name":"compand","info":"0.3,1 6:-70,-60,-20 -5 -90 0.2"},
+        { "name":"equalizer","info":"89.5 1.5q 5.8"},
+        { "name":"equalizer","info":"109.5 1.5q 5.8"},
+        { "name":"lowpass","info":"-2 89.5 1.5q"},
+        { "name":"highpass","info":"-2 109.5 1.5q"},
+        { "name":"limiter","info":"-5.0,1.0,5,200"}
+    ]
+}
+

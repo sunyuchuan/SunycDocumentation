@@ -1,0 +1,34 @@
+{
+录音轨
+    "record": [
+其中一个录音片段
+        { "file_path":"../data/side_chain_test.pcm"文件绝对路径,"isPcm":"true"是否pcm文件,"volume":80音量值,"cropStartTimeMs":118000从文件的哪个位置开始读取数据,"cropEndTimeMs":150000到文件的哪个位置结束读取,"sampleRate":44100如果是pcm需要配置采样率,"nbChannels":1如果是pcm需要配置声道数,"startTimeMs":140000该音频片段在整个混音时间坐标内的开始位置,"endTimeMs":200000该音频片段在整个混音时间坐标内的结束位置,
+            "effects": [特效effects，只针对当前这个音频片段
+                { "name":"NoiseSuppression","info":"On"},on是打开降噪，off关闭
+                { "name":"Beautify","info":"Magnetic"}Magnetic是美化中的磁性模式
+            ]
+        },
+其中一个录音片段
+        { "file_path":"../data/side_chain_test.pcm","isPcm":"true","volume":80,"cropStartTimeMs":10000,"cropEndTimeMs":118000,"sampleRate":44100,"nbChannels":1,"startTimeMs":10000,"endTimeMs":120000,
+            "effects": [特效effects，只针对当前这个音频片段
+                { "name":"NoiseSuppression","info":"On"},
+                { "name":"Beautify","info":"Magnetic"}
+            ]
+        }
+    ],
+背景音轨
+    "bgm": [
+其中一个bgm片段
+        { "file_path":"../data/side_chain_music_test.wav"文件绝对路径,"volume":80音量值,"cropStartTimeMs":35000从文件的哪个位置开始读取数据,"cropEndTimeMs":65000到文件的哪个位置结束读取,"startTimeMs":5000该音频片段在整个混音时间坐标内的开始位置,"endTimeMs":75000该音频片段在整个混音时间坐标内的结束位置,"fadeInTimeMs":3000淡入时长,"fadeOutTimeMs":3000淡出时长,"sideChain":"on"是否开启侧链压缩，人声轨有数据时此轨降低音量值,"makeUpGain":50侧链压缩增益值，当人声消失，该音轨需要加上多少db的增益值，50是一个比例值},
+其中一个bgm片段
+        { "file_path":"../data/bgm2.mp4","volume":80,"cropStartTimeMs":0,"cropEndTimeMs":350000,"startTimeMs":80000,"endTimeMs":120000,"fadeInTimeMs":3000,"fadeOutTimeMs":3000,"sideChain":"off","makeUpGain":50}
+    ],
+音效轨
+    "music": [
+其中一个音效片段
+        { "file_path":"../data/audio_effects_2.wav","volume":80,"cropStartTimeMs":1000,"cropEndTimeMs":6000,"startTimeMs":150000,"endTimeMs":200000,"fadeInTimeMs":2000,"fadeOutTimeMs":2000,"sideChain":"off","makeUpGain":50}
+    ]
+}
+
+
+
